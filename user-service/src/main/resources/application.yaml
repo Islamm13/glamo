@@ -1,0 +1,27 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: user-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb_yt
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring.jpa.show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+       defaultZone: http://eurekaserver:8070/eureka/
+
+
+
