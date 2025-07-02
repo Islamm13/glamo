@@ -1,0 +1,16 @@
+server:
+  port: 5008
+
+spring:
+  application:
+    name: review
+
+  datasource:
+    url: "jdbc:mysql://localhost:3306/salon_reviewdb?createDatabaseIfNotExist=true"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
